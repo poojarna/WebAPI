@@ -9,7 +9,7 @@ namespace WebAPIV4.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new { name = "John Doe" }); // ← Replace your name here
+            return Ok(new { name = "Nirupama Poojari" }); // ← Replace your name here
         }
     }
 }
