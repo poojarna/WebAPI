@@ -1,16 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyWebApiProject.Controllers
+namespace WebAPIV4.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class NameController : ControllerBase
+    [Route("[controller]")] // This sets the route to /MyName
+    public class MyNameController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetName()
+        public IActionResult Get()
         {
-            var name = new { Name = "Nirupama Poojari" };
-            return Ok(name);
+            return Ok(new { name = "John Doe" }); // <-- Replace with your name
         }
     }
 }
